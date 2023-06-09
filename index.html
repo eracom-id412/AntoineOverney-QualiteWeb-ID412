@@ -4,17 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=1280, initial-scale=1.0">
+    <meta name="author" content="Antoine Overney">
+    <meta name="theme-color" content="#245a44"/>
+    <meta name="description" content="Découvrez notre service de livraison révolutionnaire dans le metaverse ! Nous vous promettons une expérience unique, tout en étant éco-responsable. Profitez du greenwashing de pointe avec notre entreprise ironique. Commandez dès maintenant et plongez dans l'absurdité du futur.">
+
     <title>Statics</title>
     <link rel="stylesheet" href="Style.css">
     <script>
         function BurgerMenu() {
             let topnav = document.getElementById("TopNav");
+            let menuicon = document.getElementById("MenuIcon");
             if (topnav.className === "NavBar") {
                 topnav.className += " MenuResponsive";
+                menuicon.className += " menu-open";
             } else {
                 topnav.className = "NavBar";
+                menuicon.className = "burger-menu";
             }
-        } 
+        }
     </script>
 </head>
 <body> 
@@ -22,22 +29,22 @@
         <h1 id="logo">Statics.</h1><!--Logo-->
         <div id="separator"></div>
         <nav>
-            <a onclick="BurgerMenu()" class="burger-menu">
+            <span onclick="BurgerMenu()" id="MenuIcon" class="burger-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </a>
+            </span>
             <ul id="TopNav" class="NavBar"><!--Nav-->
-                <li><a href="">How it works</a></li>
-                <li><a href="">Product</a></li>
-                <li><a href="">About</a></li>
+                <li><a href="/How-it-works">How it works</a></li>
+                <li><a href="/Products">Product</a></li>
+                <li><a href="/About">About</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="section1">
             <h2>The first delivery company <br/>100% carbon neutral</h2><!--Title-->
-            <img id="forest_fog" src="images/forest_fog.png" alt="Un paysage forestier brumeux capturé en photo"><!--Image-->
+            <img id="forest_fog" src="images/forest_fog.png" alt="Un paysage forestier brumeux capturé en photo" loading="lazy"><!--Image-->
             <div id="citation">
                 <p>"Truth is comming and</br>it cannot be stopped"</p><!--Citation-->
                 <p class="name">-Edward Snowden</p>
@@ -54,7 +61,7 @@
                 <p>Brands should prioritize sustainability and reduce their environmental impact in order to appeal to environmentally-conscious consumers and contribute to the protection and preservation of the planet.</p>
                 <p>Statics has chosen to deliver products using web3 and NFT technology and data centers around the world instead of physically transporting items. This decision was made to minimize the company's environmental impact and appeal to consumers who value sustainability. The use of data centers helps to ensure efficiency in the delivery process.</p>
             </div>
-            <img id="forest_sky" src="images/forest_sky.png" alt="Vue aérienne d'une forêt capturée en photo"><!--Image-->
+            <img id="forest_sky" src="images/forest_sky.png" alt="Vue aérienne d'une forêt capturée en photo" loading="lazy"><!--Image-->
         </section>
     </main>
     <footer><!--Footer-->
