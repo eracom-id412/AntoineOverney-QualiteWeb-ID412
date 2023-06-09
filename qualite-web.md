@@ -42,7 +42,7 @@ Dans quel cas cela aide l'utilisateur ? (2 pts)
 ### Analyse de ma page (2 pts)
 
 - Taille globale de votre page (le volume de données en Ko ou Mo).
-3 Mo
+1.5 Mo
 
 - Répartition entre les différents contenus (images, fontes, html/css/js...)
 Html: 4 Ko
@@ -51,7 +51,7 @@ Fontes: 122 Kb
 Css: 5 Kb
 
 - Vitesse de chargement
-0.4 s
+371 ms
 
 ### Performance - Amélioration 1
 
